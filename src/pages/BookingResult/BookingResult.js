@@ -8,7 +8,7 @@ export default function BookingResult(props) {
     const logoHTRap = localStorage.getItem('cinemaComplexLogo')
     const dispatch = useDispatch()
     window.onload = function () {
-        history.push('/home')
+        history.push('/')
     }
     useEffect(() => {
         dispatch({
@@ -82,7 +82,7 @@ export default function BookingResult(props) {
                     </s.Ticket>
                     <div className='w-100 text-center'>
                         <s.HomeButton onClick={() => {
-                            history.push('/home')
+                            history.push('/')
                         }}>Về Trang Chủ</s.HomeButton>
                     </div>
                     <div className='contact'>

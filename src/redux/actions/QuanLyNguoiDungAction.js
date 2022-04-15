@@ -21,10 +21,10 @@ export const dangNhapAction = (thongTinDangNhap) => {
 
                 } else if (history.location.pathname === '/admin/login') {
                     alert('Bạn không có quyền truy cập vào trang này !')
-                    history.replace('/home')
+                    history.replace('/')
                 }
                 else {
-                    history.replace('/home')
+                    history.replace('/')
                 }
 
             }

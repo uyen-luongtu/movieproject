@@ -18,7 +18,7 @@ export default function Header() {
             <s.Header>
                 <s.NavbarHeader className="navbar navbar-expand-sm">
                     <div className="container-fluid p-0">
-                        <NavLink className='logo navbar-brand' to={'/home'}>
+                        <NavLink className='logo navbar-brand' to={'/'}>
                             <img src={logo} alt='logo' />
                         </NavLink>
                         <button className="toggleBtn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -41,11 +41,11 @@ export default function Header() {
                                     }
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/home#listMovies">Lịch Chiếu</a>
+                                    <a className="nav-link" href="/#listMovies">Lịch Chiếu</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" onClick={async () => {
-                                        await history.push('/home')
+                                        await history.push('/')
                                         let yPos = document.getElementById('showtimes').offsetTop;
                                         window.scrollTo({
                                             top: yPos - 60,
@@ -54,7 +54,7 @@ export default function Header() {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" onClick={async () => {
-                                        await history.push('/home')
+                                        await history.push('/')
                                         let yPos = document.getElementById('application').offsetTop
                                         window.scrollTo({ top: yPos - 60 })
                                     }}>Ứng Dụng</a>

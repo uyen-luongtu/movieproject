@@ -30,7 +30,7 @@ function App() {
       <Loading />
       <ModalForm />
       <Switch>
-        <HomeTemplate path='/home' exact Component={Home} />
+        <HomeTemplate path='/' exact Component={Home} />
         <HomeTemplate path='/detail/:id' exact Component={Detail} />
         <CheckoutTemplate path='/checkout/:idLichChieu' exact Component={Checkout} />
         <CheckoutTemplate path='/bookingresult' exact Component={BookingResult} />

@@ -43,7 +43,7 @@ export default function Login(props) {
     return (
         <s.FormContainer>
             <img src={loginLogo} alt='logo' onClick={() => {
-                history.push('/home')
+                history.push('/')
             }} />
             <p className='mb-3 text-center' style={{ color: 'red' }}>{loginErr}</p>
             <form onSubmit={formik.handleSubmit} className='loginForm mt-4'>
