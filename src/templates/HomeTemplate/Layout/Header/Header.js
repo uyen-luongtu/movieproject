@@ -29,10 +29,10 @@ export default function Header() {
                             <ul className="navbar-nav ">
                                 <li className='nav-item d-block d-sm-none'>
                                     {tenTaiKhoan ?
-                                        <a className="nav-link d-flex align-items-center" id='account' >
-                                            <img src={`https://i.pravatar.cc/150?u=${tenTaiKhoan}`} />
+                                        <span className="nav-link d-flex align-items-center" id='account' >
+                                            <img src={`https://i.pravatar.cc/150?u=${tenTaiKhoan}`} alt='avatar' />
                                             <span>{tenTaiKhoan}</span>
-                                        </a>
+                                        </span>
                                         : <button className=" d-flex align-items-center" id='account' onClick={() => {
                                             history.push('/login')
                                         }}>

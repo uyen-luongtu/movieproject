@@ -2,7 +2,7 @@ import { Fragment } from "react"
 import { OPEN_MODALFORM } from "../types/ModalType"
 
 const initState = {
-    Component: <p>AAA</p>,
+    Component: <Fragment></Fragment>,
 
 }
 export const ModalReducer = (state = initState, action) => {
@@ -11,6 +11,6 @@ export const ModalReducer = (state = initState, action) => {
             return { ...state, Component: action.Component }
         }
         default: return { ...state }
-            break
+            break;
     }
 }

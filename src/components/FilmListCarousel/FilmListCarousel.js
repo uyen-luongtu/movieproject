@@ -1,7 +1,6 @@
-import React, { Fragment, useEffect, useState, useLayoutEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import _debounce from 'lodash.debounce'
-import * as s from './FilmList_CarouselStyle'
+import * as s from './FilmListCarouselStyle'
 import { layDanhSachPhimAction } from '../../redux/actions/QuanLyPhimAction'
 import { breakpoint } from '../../util/settings/BreakpointStyle'
 import Film from '../Film/Film'
@@ -12,7 +11,7 @@ import nextIcon from '../../assets/img/next-icon.png'
 
 
 
-export default function FilmList_Carousel(props) {
+export default function FilmListCarousel(props) {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(layDanhSachPhimAction(''))

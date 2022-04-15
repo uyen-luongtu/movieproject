@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-// import './Checkout.css'
 import * as s from './CheckoutStyle'
 
 //img
@@ -25,7 +24,7 @@ export default function Checkout(props) {
         dispatch(layDanhSachPhongVeAction(props.match.params.idLichChieu))
     }, [])
 
-    const { thongTinLogin, thongTinUser } = useSelector(state => state.QuanLyNguoiDungReducer)
+    const { thongTinUser } = useSelector(state => state.QuanLyNguoiDungReducer)
     const { thongTinPhongVe, danhSachGheDangDat, danhSachTenGheDD } = useSelector(state => state.QuanLyDatVeReducer)
 
     const { danhSachGhe, thongTinPhim } = thongTinPhongVe

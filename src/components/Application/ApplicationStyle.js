@@ -49,7 +49,7 @@ button {
 p:last-of-type {
     margin-top: 15px;
     font-size: 14px;
-    a {
+    span {
         border-bottom: 1px solid white;
     }
 }

@@ -1,5 +1,5 @@
 import Axios from 'axios'
-import { DOMAIN, USER_LOGIN, TOKEN } from '../util/settings/config'
+import { DOMAIN, TOKEN } from '../util/settings/config'
 
 export class baseService {
     post(url, data) {

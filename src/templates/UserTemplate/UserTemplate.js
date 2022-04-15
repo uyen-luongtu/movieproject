@@ -2,7 +2,6 @@ import React from 'react'
 import { Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import * as s from './UserTemplate.Style'
-import './UserTemplate.css'
 
 export default function UserTemplate(props) {
     const { Component, ...restProps } = props

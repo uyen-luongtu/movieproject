@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Redirect, Route } from 'react-router-dom'
-import { TOKEN, USER_LOGIN } from '../../util/settings/config'
-import './AdminTemplate.css'
+import { USER_LOGIN } from '../../util/settings/config'
 import SidebarAdmin from './Layout/SidebarAdmin'
+import * as s from './AdminTemplateStyle'
 
 
 export default function AdminTemplate(props) {
@@ -16,9 +16,9 @@ export default function AdminTemplate(props) {
             return (
                 <div className='d-flex' style={{ height: '100vh' }}>
                     <SidebarAdmin />
-                    <div className='admin_content'>
+                    <s.AdminContent>
                         <Component {...routeProps} />
-                    </div>
+                    </s.AdminContent>
                 </div>
             )
         }} />

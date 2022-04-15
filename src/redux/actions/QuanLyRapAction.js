@@ -1,6 +1,6 @@
-import { QuanLyRapService, quanLyRapService } from "../../services/QuanLyRapService"
+import { quanLyRapService } from "../../services/QuanLyRapService"
 import { HIDE_LOADING, SHOW_LOADING } from "../types/QuanLyLoadingType"
-import { LAY_DS_CUM_RAP, LAY_TT_LICH_CHIEU, SET_HE_THONG_RAP, SET_TT_LICH_CHIEU } from "../types/QuanLyRapType"
+import { LAY_DS_CUM_RAP, LAY_TT_LICH_CHIEU, SET_HE_THONG_RAP } from "../types/QuanLyRapType"
 
 export const layTTHeThongRapAction = () => {
     return async dispatch => {

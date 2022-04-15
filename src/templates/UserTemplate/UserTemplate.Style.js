@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Responsive } from '../../util/settings/BreakpointStyle'
 import loginBg from '../../assets/img/loginBg.jpg'
 
 export const UserBackground = styled.div`

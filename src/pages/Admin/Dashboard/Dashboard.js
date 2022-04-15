@@ -16,7 +16,7 @@ export default function Dashboard() {
                 <s.AdminInfoContainer className='d-flex justify-content-between'>
                     <s.AdminInfo className=' flex-grow-1 mx-4'>
                         <div className='m-3 d-flex justify-content-start align-items-center'>
-                            <img src={`https://i.pravatar.cc/150?u=${user.taiKhoan}`} />
+                            <img src={`https://i.pravatar.cc/150?u=${user.taiKhoan}`} alt='avatar' />
                             <div className='ml-3'>
                                 <p>Tài khoản: <span>{user.taiKhoan}</span></p>
                                 <p>Họ tên: <span>{user.hoTen}</span></p>

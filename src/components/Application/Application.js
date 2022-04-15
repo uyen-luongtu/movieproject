@@ -14,7 +14,7 @@ export default function Application() {
                             <h2 className='text-white'>Ứng dụng tiện lợi dành cho người yêu diện ảnh</h2>
                             <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
                             <button>App miễn phí - Tải về ngay</button>
-                            <p>TIX có 2 phiên bản <a>iOS</a> & <a>Android</a></p>
+                            <p>TIX có 2 phiên bản <span>iOS</span> & <span>Android</span></p>
                         </s.ContentLeft>
                         <s.ContentRight>
                             <s.PhoneImg>

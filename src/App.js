@@ -1,4 +1,4 @@
-import { Router, Switch, Route } from 'react-router-dom';
+import { Router, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 // import './main.css'
 import GlobalStyle from './styles/GlobalStyle';

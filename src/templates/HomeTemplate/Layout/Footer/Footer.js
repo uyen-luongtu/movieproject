@@ -34,7 +34,7 @@ export default function Footer() {
                                     {listPartner.map((partner, index) => {
                                         return <s.Partner key={index} >
                                             <div className='imgBg'>
-                                                <img src={partner.img} />
+                                                <img src={partner.img} alt='img' />
                                             </div>
                                         </s.Partner>
                                     })}

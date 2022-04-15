@@ -98,7 +98,7 @@ export default function AddFilmForm() {
                         <div className='mt-2'>
                             <label for="hinhAnh" className="form-label">Hình ảnh:</label>
                             <input className='ml-2' name='hinhAnh' id='hinhAnh' type='file' onChange={handleChangeFile} accept="image/png, image/jpeg, image/gif" />
-                            <img style={{ width: '100px', display: imgSrc === '' ? 'none' : 'block' }} src={imgSrc} />
+                            <img style={{ width: '100px', display: imgSrc === '' ? 'none' : 'block' }} src={imgSrc} alt='filmimg' />
                         </div>
                     </form>
                 </div>

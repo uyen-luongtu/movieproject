@@ -1,10 +1,10 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import './AddShowtime.css'
 import { useFormik } from 'formik'
 import moment from 'moment'
 import { layThongTinCumRapTheoHeThongAction, layTTHeThongRapAction } from '../../../redux/actions/QuanLyRapAction'
 import { taoLichChieuAction } from '../../../redux/actions/QuanLyDatVeAction'
+import * as s from './AddShowtimeStyle'
 
 export default function AddShowtime(props) {
     const { phim } = props
@@ -54,7 +54,7 @@ export default function AddShowtime(props) {
     }
     return (
         <Fragment>
-            <div className="modal-content">
+            <s.AddShowtimeForm className="modal-content">
                 <div className="modal-header">
                     <h5 className="modal-title" id="modalFormLabel">Tạo lịch chiếu</h5>
                     <button className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -90,7 +90,7 @@ export default function AddShowtime(props) {
                 <div className="modal-footer">
                     <button className="btn btn-primary" onClick={formik.handleSubmit}>Xác nhận</button>
                 </div>
-            </div >
+            </s.AddShowtimeForm >
         </Fragment >
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Application from '../../components/Application/Application'
-import FilmList_Carousel from '../../components/FilmList_Carousel/FilmList_Carousel'
+import FilmListCarousel from '../../components/FilmListCarousel/FilmListCarousel'
 import HomeCarousel from './HomeCarousel/HomeCarousel'
 import HomeMenu from './HomeMenu/HomeMenu'
 
@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div>
             <HomeCarousel />
-            <FilmList_Carousel />
+            <FilmListCarousel />
             <HomeMenu />
             <Application />
         </div>

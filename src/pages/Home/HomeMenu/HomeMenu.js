@@ -5,7 +5,6 @@ import * as s from './HomeMenuStyle'
 import { useDispatch, useSelector } from 'react-redux'
 import { Tabs } from 'antd';
 import moment from 'moment'
-import { NavLink } from 'react-router-dom';
 
 
 const { TabPane } = Tabs;

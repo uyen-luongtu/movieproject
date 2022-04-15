@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoint, Responsive } from '../../util/settings/BreakpointStyle'
+import { Responsive } from '../../util/settings/BreakpointStyle'
 
 
 export const FilmListCarousel = styled.div`

@@ -1,10 +1,9 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { useFormik } from 'formik'
 import moment from 'moment'
-import './EditFilmForm.css'
 import { capNhatPhimUploadAction } from '../../../redux/actions/QuanLyPhimAction';
 import { GROUP_ID } from '../../../util/settings/config';
 
@@ -84,7 +83,7 @@ export default function EditFilmForm(props) {
                         </div>
                         <div className='mt-2'>
                             <label for="moTa" className="form-label">Mô tả:</label>
-                            <textarea rows={4} className='form-control' name='moTa' id='moTa' onChange={formik.handleChange} value={formik.values.moTa}></textarea>
+                            <textarea rows={4} className='form-control' name='moTa' id='moTa' onChange={formik.handleChange} value={formik.values.moTa} style={{ resize: 'none' }}></textarea>
                         </div>
                         <div className='mt-2'>
                             <label className='mr-2' for="ngayKhoiChieu">Ngày khởi chiếu:</label>
@@ -117,7 +116,7 @@ export default function EditFilmForm(props) {
                         <div className='mt-2'>
                             <label for="hinhAnh" className="form-label">Hình ảnh:</label>
                             <input className='ml-2' name='hinhAnh' id='hinhAnh' type='file' accept="image/png, image/jpeg,image/gif" onChange={handleChangeFile} />
-                            <img id='previewImg' style={{ width: '150px' }} src={imgSrc === '' ? phim.hinhAnh : imgSrc} />
+                            <img id='previewImg' style={{ width: '150px' }} src={imgSrc === '' ? phim.hinhAnh : imgSrc} alt='filmimg' />
                             {/* <img width={100} height={100} src={imgSrc === '' ? thongTinPhim.hinhAnh : imgSrc} /> */}
 
                         </div>

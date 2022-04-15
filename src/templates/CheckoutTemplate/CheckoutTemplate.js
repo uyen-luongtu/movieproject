@@ -1,8 +1,5 @@
-import React, { Fragment, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { Fragment } from 'react'
 import { Route, Redirect } from 'react-router-dom'
-// import '../../pages/Checkout/Checkout.css'
-import { layThongTinNguoiDungAction } from '../../redux/actions/QuanLyNguoiDungAction'
 import { USER_LOGIN } from '../../util/settings/config'
 import CheckoutHeader from './Layout/CheckoutHeader'
 

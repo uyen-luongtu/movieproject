@@ -1,3 +1,6 @@
+import styled from "styled-components";
+
+export const AddShowtimeForm = styled.div`
 select, #ngayChieuGioChieu{
     outline: auto;
     padding: 5px;
@@ -16,5 +19,4 @@ select:invalid option:not(:first-child) {
 input:focus, select:focus{
     box-shadow: none!important;
 }
-  
-  
+`

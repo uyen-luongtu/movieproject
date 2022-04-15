@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { TOKEN, USER_LOGIN } from '../../../util/settings/config'
+import * as s from './SidebarAdminStyle'
 
 export default function SidebarAdmin() {
     const user = JSON.parse(localStorage.getItem(USER_LOGIN))
@@ -9,14 +10,14 @@ export default function SidebarAdmin() {
     }, [])
     return (
         <Fragment>
-            <div className='admin_sideBar'>
-                <div className='user'>
+            <s.SidebarAdmin className='admin_sideBar'>
+                <s.UserContent>
                     <div className='user-logo'>
-                        <img src={`https://i.pravatar.cc/150?u=${user.taiKhoan}`} />
+                        <img src={`https://i.pravatar.cc/150?u=${user.taiKhoan}`} alt='avatar' />
                         <h3>{user.hoTen}</h3>
                     </div>
-                </div>
-                <ul>
+                </s.UserContent>
+                <s.Menu>
                     <li><NavLink id='dashboardBtn' to='/admin' className='text-white'>
                         <i className="fa-solid fa-list-check"></i>
                         <span>Dashboard</span>
@@ -57,9 +58,9 @@ export default function SidebarAdmin() {
                         <i className="fa-solid fa-right-from-bracket"></i>
                         <span>Đăng xuất</span>
                     </NavLink></li>
-                </ul>
+                </s.Menu>
 
-            </div>
+            </s.SidebarAdmin>
         </Fragment >
     )
 }

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
 import logoImg from '../../assets/img/logo/logo.png'
-import './Loading.css'
+import * as s from './LoadingStyle'
 
 export default function Loading() {
     const { isLoading } = useSelector(state => state.QuanLyLoadingReducer)
@@ -10,11 +10,11 @@ export default function Loading() {
         <Fragment>
             {
                 isLoading ?
-                    <div className='loading'>
-                        < div className='loading-logo' >
-                            <img src={logoImg} />
-                        </div >
-                    </div >
+                    <s.Loading>
+                        <s.LoadingLogo>
+                            <img src={logoImg} alt='logo' />
+                        </s.LoadingLogo >
+                    </s.Loading >
                     : ''
             }
         </Fragment>
