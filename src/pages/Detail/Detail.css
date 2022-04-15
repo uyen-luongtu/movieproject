@@ -1,0 +1,189 @@
+.film_mainContent {
+    margin-top: 61px;
+    background-color: #0a2029;
+    padding-bottom: 10px;
+}
+.film_mainTop {
+    position: relative;
+    overflow: hidden;
+}
+.film_blurImgBg {
+    /* background-image: url("../../assets/img/filmBg.jpg"); */
+    height: 512px;
+    background-position: top center;
+    background-size: cover;
+    filter: blur(15px);
+}
+.film_gradientColorBg {
+    background: linear-gradient(0deg, #0a2029, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.film_detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 870px;
+}
+.film_detail img {
+    width: 215px;
+    height: 318px;
+}
+.film_info {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.film_info .filmTitle {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.film_info .filmTitle span {
+    font-size: 17px;
+    color: white;
+    padding: 3px 5px;
+    background-color: #fb4226;
+    border-radius: 5px;
+    margin-right: 8px;
+    position: relative;
+    top: -2px;
+}
+.film_info .buyTicketBtn {
+    margin-top: 35px;
+    background-color: #fb4226;
+    padding: 9px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.film_info .buyTicketBtn:hover {
+    background-color: #b42a14;
+}
+.film_mainBottom {
+    position: relative;
+    top: -70px;
+}
+.film_mainBottom .nav-tabs {
+    border-bottom: none;
+}
+
+.film_mainNav button {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.film_mainNav button.active,
+.film_mainNav button:hover {
+    color: #fb4226;
+    font-size: 21px;
+}
+.film_mainBottom .mainNavContent {
+    max-width: 875px;
+    margin: 20px auto;
+}
+
+.film_mainBottom #detailCinemaComplex {
+    background-color: white;
+}
+.film_mainBottom #cinemaComplexList {
+    width: 28%;
+    min-height: 712px;
+    color: black;
+    border-right: 2px solid #ebebec;
+}
+.film_mainBottom #cinemaComplexList li {
+    cursor: pointer;
+}
+.film_mainBottom #cinemaComplexList button {
+    width: 100%;
+    padding: 20px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.film_mainBottom #cinemaComplexList button.active,
+.film_mainBottom #cinemaComplexList li:hover button {
+    opacity: 1;
+}
+.film_mainBottom #cinemaSchedule {
+    width: 72%;
+}
+.film_mainBottom #cinemaSchedule #listShowingDate {
+    color: black;
+    padding: 20px 0;
+    overflow-x: scroll;
+}
+.film_mainBottom #cinemaSchedule #listShowingDate ul {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+.film_mainBottom #cinemaSchedule #listShowingDate ul li {
+    width: 90px;
+    text-align: center;
+}
+.film_mainBottom #cinemaSchedule #listShowingDate button .day {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+.film_mainBottom #cinemaSchedule #listShowingDate button.active {
+    color: #fb4226;
+}
+#listShowingDate.scrollBarStyle::-webkit-scrollbar {
+    width: 100%;
+    height: 4px;
+}
+.film_mainBottom #listCinemaCard .cinemacard-content {
+    padding: 20px 15px;
+}
+.film_mainBottom #listCinemaCard .cinemacard-content .cinemacard-header {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.film_mainBottom #listCinemaCard .cinemacard-content .cinemacard-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.film_mainBottom #listCinemaCard .cinemacard-content .cinemacard-header .cinemaInfo h3 {
+    font-weight: bold;
+    line-height: 22px;
+}
+.film_mainBottom #listCinemaCard .cinemacard-content .cinemacard-header .cinemaInfo p {
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 15px;
+}
+#listCinemaCard .cinemacard-content .cinemacard-body .digital {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+#listCinemaCard .cinemacard-content .cinemacard-body .movieSchedule button {
+    color: #9b9b9b;
+    font-weight: 700;
+    margin: 0 10px 10px 0;
+    padding: 7px;
+    width: calc(25% - 10px);
+    background-color: hsla(0, 0%, 96.5%, 0.5);
+    border: 1px solid #e4e4e4;
+    border-radius: 7px;
+}
+#listCinemaCard .cinemacard-content .cinemacard-body .movieSchedule button span {
+    color: #108f3e;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+#listCinemaCard .cinemacard-content .cinemacard-body .movieSchedule button:hover span {
+    color: #fb4226;
+}

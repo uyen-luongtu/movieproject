@@ -1,0 +1,19 @@
+.modalForm .modal-header {
+    border-bottom: none;
+}
+.modalForm .modal-body {
+    padding: 0 40px;
+}
+.modalForm .modal-footer {
+    border-top: none;
+}
+.modalForm .modal-header .modal-title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    flex-grow: 1;
+}
+.modalForm .modal-header button:focus,
+.modalForm input:focus {
+    box-shadow: none;
+}

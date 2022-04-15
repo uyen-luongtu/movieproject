@@ -1,0 +1,58 @@
+/* #application {
+    padding-top: 60px;
+} */
+.application {
+    background-image: url(../../assets/img/appBg.jpg);
+    height: 600px;
+    background-size: cover;
+    position: relative;
+}
+#application .app_content {
+    width: 940px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#application .app_content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+}
+#application .app_content p:first-of-type {
+    font-size: 16px;
+    line-height: 22px;
+}
+#application .app_content button {
+    padding: 12px 20px;
+    background-color: #fb4226;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#application .app_content p:last-of-type {
+    margin-top: 15px;
+    font-size: 14px;
+}
+#application .app_content p:last-of-type a {
+    border-bottom: 1px solid white;
+}
+#application .phoneImg {
+    width: 46%;
+    margin: auto;
+}
+#application .app_content_right {
+    position: relative;
+}
+#application .appSlide {
+    position: absolute;
+    top: 2%;
+    left: 142px;
+    width: 41%;
+    margin: auto;
+}
+
+#application .appSlide img {
+    border-radius: 25px;
+}

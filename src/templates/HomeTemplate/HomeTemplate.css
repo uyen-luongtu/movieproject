@@ -1,0 +1,139 @@
+
+
+/* carousel */
+#movieCarousel .carousel-control-next,
+#movieCarousel .carousel-control-prev {
+    width: 10%;
+}
+#movieCarousel .carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+}
+#movieCarousel {
+    margin-top: 60px;
+}
+#movieCarousel .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background-color: #d8d8d8;
+    opacity: 1;
+}
+#movieCarousel .carousel-indicators button.active {
+    background-color: #fb4226;
+}
+#movieCarousel .carousel-inner img {
+    max-height: 600px;
+}
+
+/* .showtimes */
+.showtimes .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-right > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-left > div > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-right > div > .ant-tabs-nav .ant-tabs-tab {
+    padding: 0;
+}
+.showtimes .ant-tabs-left > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane,
+.ant-tabs-left > div > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+    padding: 0;
+}
+.showtimes .showtimes_cinemaSystem,
+.showtimes .showtimes_cinemaDetails,
+.showtimes .showtimes_movieList {
+    padding: 10px 22px;
+}
+
+.showtimes .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    text-shadow: none;
+}
+.showtimes .ant-tabs {
+    line-height: inherit;
+}
+.showtimes {
+    max-width: 940px;
+    margin: 40px auto;
+}
+.showtimes .showtimes_cinemaSystem,
+.showtimes .showtimes_cinemaDetails {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+.showtimes .ant-tabs-tab-active .showtimes_cinemaSystem,
+.showtimes .ant-tabs-tab-active .showtimes_cinemaDetails,
+.showtimes .showtimes_cinemaSystem:hover,
+.showtimes .showtimes_cinemaDetails:hover {
+    opacity: 1;
+}
+.showtimes .showtimes_cinemaList .ant-tabs-nav-list {
+    height: 705px;
+    /* overflow-y: scroll; */
+}
+.showtimes .showtimes_cinemaDetails {
+    white-space: normal;
+    width: 282px;
+}
+.showtimes .showtimes_cinemaInfo .cinemaName span {
+    color: #8bc541;
+}
+.showtimes .showtimes_cinemaInfo p {
+    font-size: 12px;
+    color: #949494;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.showtimes .showtimes_movieList {
+    height: 705px;
+    overflow-y: scroll;
+}
+
+.showtimes .showtimes_movieDetails .movieTitle span {
+    color: white;
+    padding: 3px 5px;
+    background-color: #fb4226;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.showtimes .showtimes_movieDetails .movieTitle {
+    font-weight: 600;
+}
+
+.showtimes .showtimes_movieDetails p {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.showtimes .showtimes_movieItem .digital {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.showing-time:hover{
+  
+    color: #9b9b9b;
+
+}
+ .showing-time {
+     text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: #9b9b9b;
+    font-weight: 700;
+    margin: 0 10px 10px 0;
+    padding: 3px 0;
+    width: calc(25% - 10px);
+    background-color: hsla(0, 0%, 96.5%, 0.5);
+    border: 1px solid #e4e4e4;
+    border-radius: 7px;
+}
+ .showing-time span {
+    color: #108f3e;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+ .showing-time:hover span {
+    color: #fb4226;
+}
