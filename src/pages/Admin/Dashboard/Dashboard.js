@@ -30,7 +30,7 @@ export default function Dashboard() {
                         <button className='btn mr-5' onClick={() => {
                             history.push('/admin/profile')
                         }}>Xem hồ sơ</button>
-                        <button data-bs-toggle="modal" data-bs-target="#modalForm" onClick={() => {
+                        <button className='btn' data-bs-toggle="modal" data-bs-target="#modalForm" onClick={() => {
                             dispatch({
                                 type: OPEN_MODALFORM,
                                 Component: <ChangePasswordForm />
